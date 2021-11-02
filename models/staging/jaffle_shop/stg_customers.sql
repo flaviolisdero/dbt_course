@@ -9,4 +9,4 @@ select
     first_name,
     last_name
 
-from sandbox.dbt_course_jaffle_shop.customers
+from {{ source('jaffle_shop','customers')}}

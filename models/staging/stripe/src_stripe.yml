@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: stripe
+    schema: dbt_course_stripe
+    database: sandbox
+    tables:
+      - name: payment
+        description: Raw payments data.
